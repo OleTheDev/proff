@@ -7,7 +7,7 @@ interface Params {
 }
 
 export function useCompanySearch({ query }: Params) {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState<boolean>(false);
   const [result, setResult] = useState<IAPICompanySearchResult>({
     companies: [],
   });
